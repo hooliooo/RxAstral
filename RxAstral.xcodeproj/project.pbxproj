@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AAF1C120149E250030A3B1 /* RxAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AAF1B820149E250030A3B1 /* RxAstral.framework */; };
+		14AAF1C620149E250030A3B1 /* RxAstralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1C520149E250030A3B1 /* RxAstralTests.swift */; };
+		14AAF1C820149E250030A3B1 /* RxAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AAF1BA20149E250030A3B1 /* RxAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14AAF1D12014A0500030A3B1 /* RxAstral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D02014A0500030A3B1 /* RxAstral.swift */; };
+		14AAF1D32014A1820030A3B1 /* Test Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D22014A1820030A3B1 /* Test Helpers.swift */; };
+		8EC68A3D5AB2EDB0A72CE8CC /* Pods_RxAstralTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CD8F236421F04419A5741 /* Pods_RxAstralTests.framework */; };
+		EC3B93F9509C9DBAA88CCF4C /* Pods_RxAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E8E26D92AECC9F9072ECCE /* Pods_RxAstral.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14AAF1C220149E250030A3B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14AAF1B720149E250030A3B1;
+			remoteInfo = RxAstral;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14AAF1B820149E250030A3B1 /* RxAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AAF1BA20149E250030A3B1 /* RxAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAstral.h; sourceTree = "<group>"; };
+		14AAF1BB20149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AAF1C020149E250030A3B1 /* RxAstralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAstralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AAF1C520149E250030A3B1 /* RxAstralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstralTests.swift; sourceTree = "<group>"; };
+		14AAF1C720149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AAF1D02014A0500030A3B1 /* RxAstral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstral.swift; sourceTree = "<group>"; };
+		14AAF1D22014A1820030A3B1 /* Test Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test Helpers.swift"; sourceTree = "<group>"; };
+		1A451472C7DA7E50B42AF680 /* Pods-RxAstralTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstralTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstralTests/Pods-RxAstralTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FAA36EA2CC3A5F4F5209F26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		403CD8F236421F04419A5741 /* Pods_RxAstralTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAstralTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E24CDB1590129968BE891D6 /* RxAstral.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = RxAstral.podspec; sourceTree = "<group>"; };
+		874A325434D885F9800EDD0C /* Pods-RxAstral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstral.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstral/Pods-RxAstral.release.xcconfig"; sourceTree = "<group>"; };
+		9B550C6878E1D450F53D3D8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A0E8E26D92AECC9F9072ECCE /* Pods_RxAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2BAF82D1B0DE0455500BEB /* Pods_RxAstral_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAstral_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF45B884ACDA1E18BAC7FBCD /* Pods-RxAstralTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstralTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstralTests/Pods-RxAstralTests.release.xcconfig"; sourceTree = "<group>"; };
+		C03739CD68359CB44F209ED8 /* Pods-RxAstral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstral.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstral/Pods-RxAstral.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14AAF1B420149E250030A3B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC3B93F9509C9DBAA88CCF4C /* Pods_RxAstral.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AAF1BD20149E250030A3B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AAF1C120149E250030A3B1 /* RxAstral.framework in Frameworks */,
+				8EC68A3D5AB2EDB0A72CE8CC /* Pods_RxAstralTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AAF1B920149E250030A3B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14AAF1BA20149E250030A3B1 /* RxAstral.h */,
+				14AAF1BB20149E250030A3B1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14AAF1C420149E250030A3B1 /* RxAstralTests */ = {
+			isa = PBXGroup;
+			children = (
+				14AAF1D22014A1820030A3B1 /* Test Helpers.swift */,
+				14AAF1C520149E250030A3B1 /* RxAstralTests.swift */,
+				14AAF1C720149E250030A3B1 /* Info.plist */,
+			);
+			path = RxAstralTests;
+			sourceTree = "<group>";
+		};
+		14AAF1CF20149E900030A3B1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				14AAF1D02014A0500030A3B1 /* RxAstral.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4589DDE5AC991BC0CBE9A3ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C03739CD68359CB44F209ED8 /* Pods-RxAstral.debug.xcconfig */,
+				874A325434D885F9800EDD0C /* Pods-RxAstral.release.xcconfig */,
+				1A451472C7DA7E50B42AF680 /* Pods-RxAstralTests.debug.xcconfig */,
+				BF45B884ACDA1E18BAC7FBCD /* Pods-RxAstralTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				14AAF1CF20149E900030A3B1 /* Sources */,
+				14AAF1B920149E250030A3B1 /* Supporting Files */,
+				14AAF1C420149E250030A3B1 /* RxAstralTests */,
+				607FACD11AFB9204008FA782 /* Products */,
+				F1F52D0E58EC288A9FDB1BF4 /* Frameworks */,
+				4589DDE5AC991BC0CBE9A3ED /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14AAF1B820149E250030A3B1 /* RxAstral.framework */,
+				14AAF1C020149E250030A3B1 /* RxAstralTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				5E24CDB1590129968BE891D6 /* RxAstral.podspec */,
+				9B550C6878E1D450F53D3D8C /* README.md */,
+				2FAA36EA2CC3A5F4F5209F26 /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		F1F52D0E58EC288A9FDB1BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2BAF82D1B0DE0455500BEB /* Pods_RxAstral_Tests.framework */,
+				A0E8E26D92AECC9F9072ECCE /* Pods_RxAstral.framework */,
+				403CD8F236421F04419A5741 /* Pods_RxAstralTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14AAF1B520149E250030A3B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AAF1C820149E250030A3B1 /* RxAstral.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14AAF1B720149E250030A3B1 /* RxAstral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AAF1CD20149E250030A3B1 /* Build configuration list for PBXNativeTarget "RxAstral" */;
+			buildPhases = (
+				332D1F442BEB00A7D909FF22 /* [CP] Check Pods Manifest.lock */,
+				14AAF1B320149E250030A3B1 /* Sources */,
+				14AAF1B420149E250030A3B1 /* Frameworks */,
+				14AAF1B520149E250030A3B1 /* Headers */,
+				14AAF1B620149E250030A3B1 /* Resources */,
+				09739E30CBDB405772DDB16A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxAstral;
+			productName = RxAstral;
+			productReference = 14AAF1B820149E250030A3B1 /* RxAstral.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		14AAF1BF20149E250030A3B1 /* RxAstralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14AAF1CE20149E250030A3B1 /* Build configuration list for PBXNativeTarget "RxAstralTests" */;
+			buildPhases = (
+				23527E1F71D603BEF2D336FB /* [CP] Check Pods Manifest.lock */,
+				14AAF1BC20149E250030A3B1 /* Sources */,
+				14AAF1BD20149E250030A3B1 /* Frameworks */,
+				14AAF1BE20149E250030A3B1 /* Resources */,
+				C79A9B9FC77E188A0AF61C3A /* [CP] Embed Pods Frameworks */,
+				4A251CAAFC21D93F0F24510E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14AAF1C320149E250030A3B1 /* PBXTargetDependency */,
+			);
+			name = RxAstralTests;
+			productName = RxAstralTests;
+			productReference = 14AAF1C020149E250030A3B1 /* RxAstralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					14AAF1B720149E250030A3B1 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = S886WPSL95;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					14AAF1BF20149E250030A3B1 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = S886WPSL95;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RxAstral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14AAF1B720149E250030A3B1 /* RxAstral */,
+				14AAF1BF20149E250030A3B1 /* RxAstralTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14AAF1B620149E250030A3B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AAF1BE20149E250030A3B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09739E30CBDB405772DDB16A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAstral/Pods-RxAstral-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23527E1F71D603BEF2D336FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxAstralTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		332D1F442BEB00A7D909FF22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxAstral-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A251CAAFC21D93F0F24510E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAstralTests/Pods-RxAstralTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79A9B9FC77E188A0AF61C3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxAstralTests/Pods-RxAstralTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Astral/Astral.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Astral.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxAstralTests/Pods-RxAstralTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14AAF1B320149E250030A3B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AAF1D12014A0500030A3B1 /* RxAstral.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14AAF1BC20149E250030A3B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AAF1D32014A1820030A3B1 /* Test Helpers.swift in Sources */,
+				14AAF1C620149E250030A3B1 /* RxAstralTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14AAF1C320149E250030A3B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14AAF1B720149E250030A3B1 /* RxAstral */;
+			targetProxy = 14AAF1C220149E250030A3B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14AAF1C920149E250030A3B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C03739CD68359CB44F209ED8 /* Pods-RxAstral.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S886WPSL95;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstral;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14AAF1CA20149E250030A3B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874A325434D885F9800EDD0C /* Pods-RxAstral.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S886WPSL95;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstral;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		14AAF1CB20149E250030A3B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A451472C7DA7E50B42AF680 /* Pods-RxAstralTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S886WPSL95;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RxAstralTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstralTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14AAF1CC20149E250030A3B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF45B884ACDA1E18BAC7FBCD /* Pods-RxAstralTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S886WPSL95;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RxAstralTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstralTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14AAF1CD20149E250030A3B1 /* Build configuration list for PBXNativeTarget "RxAstral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AAF1C920149E250030A3B1 /* Debug */,
+				14AAF1CA20149E250030A3B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14AAF1CE20149E250030A3B1 /* Build configuration list for PBXNativeTarget "RxAstralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14AAF1CB20149E250030A3B1 /* Debug */,
+				14AAF1CC20149E250030A3B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RxAstral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}

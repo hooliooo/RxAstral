@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0900"
+   LastUpgradeVersion = "0920"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "RxAstral_Example.app"
-               BlueprintName = "RxAstral_Example"
-               ReferencedContainer = "container:RxAstral.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "RxAstral_Tests.xctest"
-               BlueprintName = "RxAstral_Tests"
+               BlueprintIdentifier = "14AAF1B720149E250030A3B1"
+               BuildableName = "RxAstral.framework"
+               BlueprintName = "RxAstral"
                ReferencedContainer = "container:RxAstral.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "RxAstral_Tests.xctest"
-               BlueprintName = "RxAstral_Tests"
+               BlueprintIdentifier = "14AAF1BF20149E250030A3B1"
+               BuildableName = "RxAstralTests.xctest"
+               BlueprintName = "RxAstralTests"
                ReferencedContainer = "container:RxAstral.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,9 +43,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "RxAstral_Example.app"
-            BlueprintName = "RxAstral_Example"
+            BlueprintIdentifier = "14AAF1B720149E250030A3B1"
+            BuildableName = "RxAstral.framework"
+            BlueprintName = "RxAstral"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,16 +63,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "RxAstral_Example.app"
-            BlueprintName = "RxAstral_Example"
+            BlueprintIdentifier = "14AAF1B720149E250030A3B1"
+            BuildableName = "RxAstral.framework"
+            BlueprintName = "RxAstral"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -96,16 +81,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "RxAstral_Example.app"
-            BlueprintName = "RxAstral_Example"
+            BlueprintIdentifier = "14AAF1B720149E250030A3B1"
+            BuildableName = "RxAstral.framework"
+            BlueprintName = "RxAstral"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
