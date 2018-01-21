@@ -5,24 +5,28 @@
 [![License](https://img.shields.io/cocoapods/l/RxAstral.svg?style=flat)](http://cocoapods.org/pods/RxAstral)
 [![Platform](https://img.shields.io/cocoapods/p/RxAstral.svg?style=flat)](http://cocoapods.org/pods/RxAstral)
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
-## Installation
+RxAstral requires iOS 10.0 or higher and Swift 3.x
 
-RxAstral is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+## Installation
+### [CocoaPods](http://cocoapods.org/)
+
+1. Add the following to your [Podfile](http://guides.cocoapods.org/using/the-podfile.html):
 
 ```ruby
 pod 'RxAstral'
 ```
+2. Integrate your dependencies using frameworks: add `use_frameworks!` to your Podfile.
+3. Run `pod install`.
+
+## Example
+
+To be created
 
 ## Author
 
-hooliooo, julio.alorro@ffuf.de
+[Julio Alorro](https://twitter.com/Hooliooo)
 
 ## License
 
