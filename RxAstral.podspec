@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxAstral'
   s.module_name      = 'RxAstral'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary          = 'An Rx extension to Astral, an HTTP networking library that uses protocols and Futures'
@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation'
   s.dependency 'Astral'
   s.dependency 'RxSwift'
-  s.dependency 'RxCocoa'
+
+  s.swift_versionn = '4.0'
 
 end

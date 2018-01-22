@@ -7,7 +7,6 @@ target 'RxAstral' do
   # Pods for RxAstral
   pod 'Astral'
   pod 'RxSwift'
-  pod 'RxCocoa'
 
   target 'RxAstralTests' do
     inherit! :search_paths

@@ -16,7 +16,14 @@ extension JSONRequestDispatcher: ReactiveCompatible {}
 
 extension Reactive where Base: JSONRequestDispatcher {
 
-    func response() -> Single<Response> {
+    /**
+
+     Rx extension to the response() method that transforms the Future into a Single and return it.
+
+     Returns a Single<Response> instance.
+
+    */
+    public func response() -> Single<Response> {
 
         return Single.create(
             subscribe: { (single: @escaping (SingleEvent<Response>) -> Void) -> Disposable in
@@ -30,13 +37,20 @@ extension Reactive where Base: JSONRequestDispatcher {
                             case .failure(let error):
                                 single(SingleEvent<Response>.error(error))
                         }
-                }
+                    }
 
                 return Disposables.create {
                     self.base.cancel()
                 }
             }
         )
+    }
+
+    /**
+     Cancels all URLSessionTasks created by this RequestDispatcher instance.
+    */
+    public func cancel() {
+        self.base.cancel()
     }
 
 }

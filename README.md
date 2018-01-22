@@ -1,6 +1,5 @@
 # RxAstral
 
-[![CI Status](http://img.shields.io/travis/hooliooo/RxAstral.svg?style=flat)](https://travis-ci.org/hooliooo/RxAstral)
 [![Version](https://img.shields.io/cocoapods/v/RxAstral.svg?style=flat)](http://cocoapods.org/pods/RxAstral)
 [![License](https://img.shields.io/cocoapods/l/RxAstral.svg?style=flat)](http://cocoapods.org/pods/RxAstral)
 [![Platform](https://img.shields.io/cocoapods/p/RxAstral.svg?style=flat)](http://cocoapods.org/pods/RxAstral)
