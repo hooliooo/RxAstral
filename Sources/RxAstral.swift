@@ -9,7 +9,6 @@
 import Foundation
 import Astral
 import RxSwift
-import RxCocoa
 import Result
 
 extension JSONRequestDispatcher: ReactiveCompatible {}
