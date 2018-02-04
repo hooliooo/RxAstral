@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14AAF1B720149E250030A3B1"
-               BuildableName = "RxAstral.framework"
-               BlueprintName = "RxAstral"
+               BlueprintIdentifier = "14C4C0962026F16D00938416"
+               BuildableName = "RxAstral-watchOS.framework"
+               BlueprintName = "RxAstral-watchOS"
                ReferencedContainer = "container:RxAstral.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,26 +29,7 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "14AAF1BF20149E250030A3B1"
-               BuildableName = "RxAstralTests.xctest"
-               BlueprintName = "RxAstralTests"
-               ReferencedContainer = "container:RxAstral.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14AAF1B720149E250030A3B1"
-            BuildableName = "RxAstral.framework"
-            BlueprintName = "RxAstral"
-            ReferencedContainer = "container:RxAstral.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -66,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14AAF1B720149E250030A3B1"
-            BuildableName = "RxAstral.framework"
-            BlueprintName = "RxAstral"
+            BlueprintIdentifier = "14C4C0962026F16D00938416"
+            BuildableName = "RxAstral-watchOS.framework"
+            BlueprintName = "RxAstral-watchOS"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,9 +65,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "14AAF1B720149E250030A3B1"
-            BuildableName = "RxAstral.framework"
-            BlueprintName = "RxAstral"
+            BlueprintIdentifier = "14C4C0962026F16D00938416"
+            BuildableName = "RxAstral-watchOS.framework"
+            BlueprintName = "RxAstral-watchOS"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
