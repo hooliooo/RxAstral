@@ -12,8 +12,9 @@
 		14AAF1C820149E250030A3B1 /* RxAstral.h in Headers */ = {isa = PBXBuildFile; fileRef = 14AAF1BA20149E250030A3B1 /* RxAstral.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14AAF1D12014A0500030A3B1 /* RxAstral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D02014A0500030A3B1 /* RxAstral.swift */; };
 		14AAF1D32014A1820030A3B1 /* Test Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D22014A1820030A3B1 /* Test Helpers.swift */; };
+		14C4BFB12026D49900938416 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4BFB22026D49900938416 /* Astral.framework */; };
+		14C4BFB32026D54900938416 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4BFB42026D54900938416 /* RxSwift.framework */; };
 		8EC68A3D5AB2EDB0A72CE8CC /* Pods_RxAstralTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403CD8F236421F04419A5741 /* Pods_RxAstralTests.framework */; };
-		EC3B93F9509C9DBAA88CCF4C /* Pods_RxAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E8E26D92AECC9F9072ECCE /* Pods_RxAstral.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,9 @@
 		14AAF1C720149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AAF1D02014A0500030A3B1 /* RxAstral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstral.swift; sourceTree = "<group>"; };
 		14AAF1D22014A1820030A3B1 /* Test Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test Helpers.swift"; sourceTree = "<group>"; };
+		14C4BFB22026D49900938416 /* Astral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Astral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C4BFB42026D54900938416 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C4BFB52026D65F00938416 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		1A451472C7DA7E50B42AF680 /* Pods-RxAstralTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxAstralTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxAstralTests/Pods-RxAstralTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FAA36EA2CC3A5F4F5209F26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		403CD8F236421F04419A5741 /* Pods_RxAstralTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxAstralTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3B93F9509C9DBAA88CCF4C /* Pods_RxAstral.framework in Frameworks */,
+				14C4BFB32026D54900938416 /* RxSwift.framework in Frameworks */,
+				14C4BFB12026D49900938416 /* Astral.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +139,7 @@
 				5E24CDB1590129968BE891D6 /* RxAstral.podspec */,
 				9B550C6878E1D450F53D3D8C /* README.md */,
 				2FAA36EA2CC3A5F4F5209F26 /* LICENSE */,
+				14C4BFB52026D65F00938416 /* Cartfile */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 		F1F52D0E58EC288A9FDB1BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14C4BFB42026D54900938416 /* RxSwift.framework */,
+				14C4BFB22026D49900938416 /* Astral.framework */,
 				BA2BAF82D1B0DE0455500BEB /* Pods_RxAstral_Tests.framework */,
 				A0E8E26D92AECC9F9072ECCE /* Pods_RxAstral.framework */,
 				403CD8F236421F04419A5741 /* Pods_RxAstralTests.framework */,
@@ -407,7 +415,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstral;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -443,7 +451,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstral;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

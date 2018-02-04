@@ -11,9 +11,9 @@ import Astral
 import RxSwift
 import Result
 
-extension JSONRequestDispatcher: ReactiveCompatible {}
+extension BaseRequestDispatcher: ReactiveCompatible {}
 
-extension Reactive where Base: JSONRequestDispatcher {
+extension Reactive where Base: BaseRequestDispatcher {
 
     /**
 
@@ -22,12 +22,12 @@ extension Reactive where Base: JSONRequestDispatcher {
      Returns a Single<Response> instance.
 
     */
-    public func response() -> Single<Response> {
+    public func response(of request: Request) -> Single<Response> {
 
         return Single.create(
             subscribe: { (single: @escaping (SingleEvent<Response>) -> Void) -> Disposable in
 
-                self.base.response()
+                self.base.response(of: request)
                     .onComplete { (result: Result<Response, NetworkingError>) -> Void in
                         switch result {
                             case .success(let response):
