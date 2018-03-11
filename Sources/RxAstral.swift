@@ -9,40 +9,84 @@
 import Foundation
 import Astral
 import RxSwift
-import Result
 
 extension BaseRequestDispatcher: ReactiveCompatible {}
 
-extension Reactive where Base: BaseRequestDispatcher {
+extension Reactive where Base: RequestDispatcher {
 
     /**
 
-     Rx extension to the response() method that transforms the Future into a Single and return it.
-
-     Returns a Single<Response> instance.
+     Rx extension on RequestDispatcher that returns an Observable<Response>.
+     - parameter request: The Request instance used to create an Observable<Response>.
 
     */
-    public func response(of request: Request) -> Single<Response> {
+    public func response(of request: Request) -> Observable<Response> {
+        let urlRequest: URLRequest = self.base.urlRequest(of: request)
+        self.base.tasks = self.base.tasks.filter {
+            $0.state == URLSessionTask.State.running ||
+            $0.state == URLSessionTask.State.suspended
+        }
 
-        return Single.create(
-            subscribe: { (single: @escaping (SingleEvent<Response>) -> Void) -> Disposable in
+        return Observable.create { (observer: AnyObserver<Response>) -> Disposable in
+            let task = Base.session.dataTask(with: urlRequest) {
+                (data: Data?, response: URLResponse?, error: Error?) -> Void in
+                // swiftlint:disable:previous closure_parameter_position
 
-                self.base.response(of: request)
-                    .onComplete { (result: Result<Response, NetworkingError>) -> Void in
-                        switch result {
-                            case .success(let response):
-                                single(SingleEvent<Response>.success(response))
+                if let error = error {
 
-                            case .failure(let error):
-                                single(SingleEvent<Response>.error(error))
-                        }
+                    observer.onError(
+                        NetworkingError.connection(error)
+                    )
+
+                } else if let data = data, let response = response as? HTTPURLResponse {
+
+                    switch self.base.isDebugMode {
+                        case true:
+                            print("HTTP Method: \(request.method.stringValue)")
+                            print("Response: \(response)")
+
+                        case false:
+                            break
                     }
 
-                return Disposables.create {
-                    self.base.cancel()
+                    switch response.statusCode {
+                        case 200...399:
+                            observer.onNext(
+                                JSONResponse(
+                                    httpResponse: response,
+                                    data: data
+                                )
+                            )
+
+                        case 400...599:
+                            observer.onError(
+                                NetworkingError.response(
+                                    JSONResponse(
+                                        httpResponse: response,
+                                        data: data
+                                    )
+                                )
+                            )
+
+                        default:
+                           observer.onError(
+                                NetworkingError.unknownResponse(
+                                    JSONResponse(httpResponse: response, data: data),
+                                    "Unhandled status code: \(response.statusCode)"
+                                )
+                            )
+                    }
+                } else {
+                    observer.onError(
+                        NetworkingError.unknown("Unknown error occured")
+                    )
                 }
             }
-        )
+
+            task.resume()
+
+            return Disposables.create(with: task.cancel)
+        }
     }
 
     /**

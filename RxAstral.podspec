@@ -9,16 +9,16 @@
 Pod::Spec.new do |s|
   s.name             = 'RxAstral'
   s.module_name      = 'RxAstral'
-  s.version          = '0.1.5'
+  s.version          = '0.2.0'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
-  s.summary          = 'An Rx extension to Astral, an HTTP networking library that uses protocols and Futures'
+  s.summary          = 'An Rx extension to Astral'
   s.homepage         = 'https://github.com/hooliooo/RxAstral'
 
   s.author           = { 'Julio Alorro' => 'alorro3@gmail.com' }
   s.source           = { :git => 'https://github.com/hooliooo/RxAstral.git', :tag => s.version }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'Sources/*.swift'
   s.requires_arc = true

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "14C4C0962026F16D00938416"
-               BuildableName = "RxAstral-watchOS.framework"
+               BuildableName = "RxAstral.framework"
                BlueprintName = "RxAstral-watchOS"
                ReferencedContainer = "container:RxAstral.xcodeproj">
             </BuildableReference>
@@ -48,7 +48,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14C4C0962026F16D00938416"
-            BuildableName = "RxAstral-watchOS.framework"
+            BuildableName = "RxAstral.framework"
             BlueprintName = "RxAstral-watchOS"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "14C4C0962026F16D00938416"
-            BuildableName = "RxAstral-watchOS.framework"
+            BuildableName = "RxAstral.framework"
             BlueprintName = "RxAstral-watchOS"
             ReferencedContainer = "container:RxAstral.xcodeproj">
          </BuildableReference>

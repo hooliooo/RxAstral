@@ -22,11 +22,9 @@ struct Configuration: RequestConfiguration {
         return []
     }
 
-    var baseHeaders: [String: Any] {
-        return [
-            "Content-Type": "application/json"
-        ]
-    }
+    var baseHeaders: Set<Header> = [
+        Header(key: Header.Field.contentType, value: Header.Value.mediaType(MediaType.applicationJSON))
+    ]
 }
 
 struct GetRequest: Request {
@@ -40,7 +38,7 @@ struct GetRequest: Request {
         "this": "that"
     ]
 
-    let headers: [String: Any] = [
-        "Get-Request": "YES"
+    let headers: Set<Header> = [
+        Header(key: Header.Field.custom("Get-Request"), value: Header.Value.custom("YES"))
     ]
 }
