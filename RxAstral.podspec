@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxAstral'
   s.module_name      = 'RxAstral'
-  s.version          = '0.2.1'
+  s.version          = '0.2.2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary          = 'An Rx extension to Astral'
@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/hooliooo/RxAstral.git', :tag => s.version }
 
   s.ios.deployment_target = '9.3'
+  s.osx.deployment_target = '10.11'
+  s.tvos.deployment_target = '11.0'
+  s.watchos.deployment_target = '4.0'
 
   s.source_files = 'Sources/*.swift'
   s.requires_arc = true
