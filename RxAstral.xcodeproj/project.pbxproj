@@ -23,6 +23,15 @@
 		14292E7520556283004AFAE8 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0A82026F29900938416 /* Astral.framework */; };
 		14292E76205562A5004AFAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0A62026F29900938416 /* RxSwift.framework */; };
 		14292E77205562E9004AFAE8 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14292E53205561A0004AFAE8 /* ResponseTests.swift */; };
+		14292E7920557C59004AFAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E7820557C59004AFAE8 /* Foundation.framework */; };
+		14292E7C20557C65004AFAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E7A20557C65004AFAE8 /* RxSwift.framework */; };
+		14292E7D20557C65004AFAE8 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E7B20557C65004AFAE8 /* Astral.framework */; };
+		14292E7F20557CD0004AFAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E7E20557CD0004AFAE8 /* Foundation.framework */; };
+		14292E8220557D2B004AFAE8 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8020557D2A004AFAE8 /* Astral.framework */; };
+		14292E8320557D2B004AFAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8120557D2A004AFAE8 /* RxSwift.framework */; };
+		14292E8520557D99004AFAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8420557D99004AFAE8 /* Foundation.framework */; };
+		14292E8820557DA7004AFAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8620557DA6004AFAE8 /* RxSwift.framework */; };
+		14292E8920557DA7004AFAE8 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8720557DA7004AFAE8 /* Astral.framework */; };
 		14AAF1C120149E250030A3B1 /* RxAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AAF1B820149E250030A3B1 /* RxAstral.framework */; };
 		14AAF1C620149E250030A3B1 /* RxAstralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1C520149E250030A3B1 /* RxAstralTests.swift */; };
 		14AAF1D12014A0500030A3B1 /* RxAstral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D02014A0500030A3B1 /* RxAstral.swift */; };
@@ -33,15 +42,6 @@
 		14C4C0A52026F27F00938416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0A42026F27E00938416 /* Foundation.framework */; };
 		14C4C0AA2026F29900938416 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0A62026F29900938416 /* RxSwift.framework */; };
 		14C4C0AC2026F29900938416 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0A82026F29900938416 /* Astral.framework */; };
-		14C4C0AF2026F30A00938416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0AE2026F30A00938416 /* Foundation.framework */; };
-		14C4C0B62026F31800938416 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0B22026F31800938416 /* Astral.framework */; };
-		14C4C0B72026F31800938416 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0B32026F31800938416 /* RxSwift.framework */; };
-		14C4C0B92026F4D900938416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0B82026F4D900938416 /* Foundation.framework */; };
-		14C4C0BE2026F4EB00938416 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0BA2026F4EB00938416 /* Astral.framework */; };
-		14C4C0BF2026F4EB00938416 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0BB2026F4EB00938416 /* RxSwift.framework */; };
-		14C4C0C32026F4FC00938416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0C22026F4FC00938416 /* Foundation.framework */; };
-		14C4C0CA2026F50B00938416 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0C62026F50B00938416 /* RxSwift.framework */; };
-		14C4C0CB2026F50B00938416 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C4C0C72026F50B00938416 /* Astral.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +69,15 @@
 		14292E63205561A0004AFAE8 /* BasicMultipartFormDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMultipartFormDataRequest.swift; sourceTree = "<group>"; };
 		14292E64205561A0004AFAE8 /* BasicPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicPostRequest.swift; sourceTree = "<group>"; };
 		14292E65205561A0004AFAE8 /* FormURLEncodedPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormURLEncodedPostRequest.swift; sourceTree = "<group>"; };
+		14292E7820557C59004AFAE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		14292E7A20557C65004AFAE8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
+		14292E7B20557C65004AFAE8 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/Mac/Astral.framework; sourceTree = "<group>"; };
+		14292E7E20557CD0004AFAE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		14292E8020557D2A004AFAE8 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/tvOS/Astral.framework; sourceTree = "<group>"; };
+		14292E8120557D2A004AFAE8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
+		14292E8420557D99004AFAE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		14292E8620557DA6004AFAE8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
+		14292E8720557DA7004AFAE8 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/watchOS/Astral.framework; sourceTree = "<group>"; };
 		14AAF1B820149E250030A3B1 /* RxAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AAF1BA20149E250030A3B1 /* RxAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAstral.h; sourceTree = "<group>"; };
 		14AAF1BB20149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,24 +93,7 @@
 		14C4C0A22026F16D00938416 /* RxAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C4C0A42026F27E00938416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14C4C0A62026F29900938416 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		14C4C0A72026F29900938416 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		14C4C0A82026F29900938416 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/iOS/Astral.framework; sourceTree = "<group>"; };
-		14C4C0A92026F29900938416 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
-		14C4C0AE2026F30A00938416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		14C4C0B02026F31800938416 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/Mac/BrightFutures.framework; sourceTree = "<group>"; };
-		14C4C0B12026F31800938416 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
-		14C4C0B22026F31800938416 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/Mac/Astral.framework; sourceTree = "<group>"; };
-		14C4C0B32026F31800938416 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/Mac/RxSwift.framework; sourceTree = "<group>"; };
-		14C4C0B82026F4D900938416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		14C4C0BA2026F4EB00938416 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/tvOS/Astral.framework; sourceTree = "<group>"; };
-		14C4C0BB2026F4EB00938416 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/tvOS/RxSwift.framework; sourceTree = "<group>"; };
-		14C4C0BC2026F4EB00938416 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/tvOS/Result.framework; sourceTree = "<group>"; };
-		14C4C0BD2026F4EB00938416 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/tvOS/BrightFutures.framework; sourceTree = "<group>"; };
-		14C4C0C22026F4FC00938416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		14C4C0C42026F50B00938416 /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/watchOS/BrightFutures.framework; sourceTree = "<group>"; };
-		14C4C0C52026F50B00938416 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/watchOS/Result.framework; sourceTree = "<group>"; };
-		14C4C0C62026F50B00938416 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
-		14C4C0C72026F50B00938416 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/watchOS/Astral.framework; sourceTree = "<group>"; };
 		2FAA36EA2CC3A5F4F5209F26 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5E24CDB1590129968BE891D6 /* RxAstral.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = RxAstral.podspec; sourceTree = "<group>"; };
 		9B550C6878E1D450F53D3D8C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -132,9 +124,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C4C0B62026F31800938416 /* Astral.framework in Frameworks */,
-				14C4C0B72026F31800938416 /* RxSwift.framework in Frameworks */,
-				14C4C0AF2026F30A00938416 /* Foundation.framework in Frameworks */,
+				14292E7C20557C65004AFAE8 /* RxSwift.framework in Frameworks */,
+				14292E7D20557C65004AFAE8 /* Astral.framework in Frameworks */,
+				14292E7920557C59004AFAE8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +134,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C4C0BE2026F4EB00938416 /* Astral.framework in Frameworks */,
-				14C4C0BF2026F4EB00938416 /* RxSwift.framework in Frameworks */,
-				14C4C0B92026F4D900938416 /* Foundation.framework in Frameworks */,
+				14292E8220557D2B004AFAE8 /* Astral.framework in Frameworks */,
+				14292E8320557D2B004AFAE8 /* RxSwift.framework in Frameworks */,
+				14292E7F20557CD0004AFAE8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,9 +144,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14C4C0CA2026F50B00938416 /* RxSwift.framework in Frameworks */,
-				14C4C0CB2026F50B00938416 /* Astral.framework in Frameworks */,
-				14C4C0C32026F4FC00938416 /* Foundation.framework in Frameworks */,
+				14292E8820557DA7004AFAE8 /* RxSwift.framework in Frameworks */,
+				14292E8920557DA7004AFAE8 /* Astral.framework in Frameworks */,
+				14292E8520557D99004AFAE8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,24 +265,16 @@
 		F1F52D0E58EC288A9FDB1BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				14C4C0C72026F50B00938416 /* Astral.framework */,
-				14C4C0C42026F50B00938416 /* BrightFutures.framework */,
-				14C4C0C52026F50B00938416 /* Result.framework */,
-				14C4C0C62026F50B00938416 /* RxSwift.framework */,
-				14C4C0C22026F4FC00938416 /* Foundation.framework */,
-				14C4C0BA2026F4EB00938416 /* Astral.framework */,
-				14C4C0BD2026F4EB00938416 /* BrightFutures.framework */,
-				14C4C0BC2026F4EB00938416 /* Result.framework */,
-				14C4C0BB2026F4EB00938416 /* RxSwift.framework */,
-				14C4C0B82026F4D900938416 /* Foundation.framework */,
-				14C4C0B22026F31800938416 /* Astral.framework */,
-				14C4C0B02026F31800938416 /* BrightFutures.framework */,
-				14C4C0B12026F31800938416 /* Result.framework */,
-				14C4C0B32026F31800938416 /* RxSwift.framework */,
-				14C4C0AE2026F30A00938416 /* Foundation.framework */,
+				14292E8720557DA7004AFAE8 /* Astral.framework */,
+				14292E8620557DA6004AFAE8 /* RxSwift.framework */,
+				14292E8420557D99004AFAE8 /* Foundation.framework */,
+				14292E8020557D2A004AFAE8 /* Astral.framework */,
+				14292E8120557D2A004AFAE8 /* RxSwift.framework */,
+				14292E7E20557CD0004AFAE8 /* Foundation.framework */,
+				14292E7B20557C65004AFAE8 /* Astral.framework */,
+				14292E7A20557C65004AFAE8 /* RxSwift.framework */,
+				14292E7820557C59004AFAE8 /* Foundation.framework */,
 				14C4C0A82026F29900938416 /* Astral.framework */,
-				14C4C0A92026F29900938416 /* BrightFutures.framework */,
-				14C4C0A72026F29900938416 /* Result.framework */,
 				14C4C0A62026F29900938416 /* RxSwift.framework */,
 				14C4C0A42026F27E00938416 /* Foundation.framework */,
 			);
@@ -766,7 +750,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstral;
 				PRODUCT_NAME = RxAstral;
@@ -805,7 +789,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstral;
 				PRODUCT_NAME = RxAstral;
