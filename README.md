@@ -6,7 +6,7 @@
 
 ## Requirements
 
-RxAstral requires iOS 10.0 or higher and Swift 3.x
+RxAstral requires iOS 9.3 or higher and Swift 3.x
 
 ## Installation
 ### [CocoaPods](http://cocoapods.org/)

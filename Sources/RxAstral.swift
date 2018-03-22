@@ -27,8 +27,10 @@ extension Reactive where Base: RequestDispatcher {
             $0.state == URLSessionTask.State.suspended
         }
 
+        let base: Base = self.base
+
         return Observable.create { (observer: AnyObserver<Response>) -> Disposable in
-            let task = Base.session.dataTask(with: urlRequest) {
+            let task = base.session.dataTask(with: urlRequest) {
                 (data: Data?, response: URLResponse?, error: Error?) -> Void in
                 // swiftlint:disable:previous closure_parameter_position
 
