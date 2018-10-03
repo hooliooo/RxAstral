@@ -28,15 +28,15 @@ struct Configuration: RequestConfiguration {
 }
 
 struct GetRequest: Request {
-    let configuration: RequestConfiguration  = Configuration()
+    let configuration: RequestConfiguration = Configuration()
 
     let method: HTTPMethod =  .get
 
     let pathComponents: [String] = ["get"]
 
-    let parameters: [String: Any] = [
+    let parameters: Parameters = Parameters.dict([
         "this": "that"
-    ]
+    ])
 
     let headers: Set<Header> = [
         Header(key: Header.Field.custom("Get-Request"), value: Header.Value.custom("YES"))

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxAstral'
   s.module_name      = 'RxAstral'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary          = 'An Rx extension to Astral'
@@ -30,6 +30,6 @@ Pod::Spec.new do |s|
   s.dependency 'Astral'
   s.dependency 'RxSwift'
 
-  s.swift_version = '4.0'
+  s.swift_version = '4.2'
 
 end

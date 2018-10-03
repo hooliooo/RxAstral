@@ -74,10 +74,12 @@ class ResponseTests: XCTestCase {
                     guard let s = self else { return }
                     let response: GetResponse = s.transform(response: response)
 
+                    guard case .dict(let parameters) = request.parameters else { XCTFail("Not a dictionary"); return }
+
                     XCTAssertTrue(response.url == BaseRequestDispatcher().urlRequest(of: request).url!)
-                    XCTAssertTrue(response.args.this == request.parameters["this"]! as! String)
-                    XCTAssertTrue(response.args.what == request.parameters["what"]! as! String)
-                    XCTAssertTrue(response.args.why == request.parameters["why"]! as! String)
+                    XCTAssertTrue(response.args.this == parameters["this"]! as! String)
+                    XCTAssertTrue(response.args.what == parameters["what"]! as! String)
+                    XCTAssertTrue(response.args.why == parameters["why"]! as! String)
                     expectation.fulfill()
                 },
                 onError: { (error: Error) -> Void in
@@ -108,10 +110,12 @@ class ResponseTests: XCTestCase {
                     guard let s = self else { return }
                     let response: PostResponse = s.transform(response: response)
 
+                    guard case .dict(let parameters) = request.parameters else { XCTFail("Not a dictionary"); return }
+
                     XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                    XCTAssertTrue(response.json.this == request.parameters["this"]! as! String)
-                    XCTAssertTrue(response.json.what == request.parameters["what"]! as! String)
-                    XCTAssertTrue(response.json.why == request.parameters["why"]! as! String)
+                    XCTAssertTrue(response.json.this == parameters["this"]! as! String)
+                    XCTAssertTrue(response.json.what == parameters["what"]! as! String)
+                    XCTAssertTrue(response.json.why == parameters["why"]! as! String)
                     expectation.fulfill()
                 },
                 onError: { (error: Error) -> Void in
@@ -140,10 +144,12 @@ class ResponseTests: XCTestCase {
                     guard let s = self else { return }
                     let response: FormURLEncodedResponse = s.transform(response: response)
 
+                    guard case .dict(let parameters) = request.parameters else { XCTFail("Not a dictionary"); return }
+
                     XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                    XCTAssertTrue(response.form.this == request.parameters["this"]! as! String)
-                    XCTAssertTrue(response.form.what == request.parameters["what"]! as! String)
-                    XCTAssertTrue(response.form.why == request.parameters["why"]! as! String)
+                    XCTAssertTrue(response.form.this == parameters["this"]! as! String)
+                    XCTAssertTrue(response.form.what == parameters["what"]! as! String)
+                    XCTAssertTrue(response.form.why == parameters["why"]! as! String)
                     expectation.fulfill()
                 },
                 onError: { (error: Error) -> Void in
@@ -173,10 +179,12 @@ class ResponseTests: XCTestCase {
                     guard let s = self else { return }
                     let response: MultipartFormDataResponse = s.transform(response: response)
 
+                    guard case .dict(let parameters) = request.parameters else { XCTFail("Not a dictionary"); return }
+
                     XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
-                    XCTAssertTrue(response.form.this == request.parameters["this"]! as! String)
-                    XCTAssertTrue(response.form.what == request.parameters["what"]! as! String)
-                    XCTAssertTrue(response.form.why == request.parameters["why"]! as! String)
+                    XCTAssertTrue(response.form.this == parameters["this"]! as! String)
+                    XCTAssertTrue(response.form.what == parameters["what"]! as! String)
+                    XCTAssertTrue(response.form.why == parameters["why"]! as! String)
                     XCTAssertFalse(response.files.isEmpty)
                     expectation.fulfill()
                 },
