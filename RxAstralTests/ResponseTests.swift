@@ -17,11 +17,12 @@ class ResponseTests: XCTestCase {
 
     var disposeBag: DisposeBag!
     let decoder: JSONDecoder = JSONDecoder()
+    private let backgroundScheduler: ConcurrentDispatchQueueScheduler = ConcurrentDispatchQueueScheduler(qos: DispatchQoS.utility)
 
-    func transform<U: Decodable>(response: Response) -> U {
+    func transform<T: Decodable>(response: Response) -> T {
         do {
 
-            return try self.decoder.decode(U.self, from: response.data)
+            return try self.decoder.decode(T.self, from: response.data)
 
         } catch {
             XCTFail("Failed to get args or url")
@@ -35,8 +36,19 @@ class ResponseTests: XCTestCase {
         let request: BasicGetRequest = BasicGetRequest()
 
         BaseRequestDispatcher().rx.response(of: request)
+            .observeOn(self.backgroundScheduler)
+            .do(
+                onSuccess: { response in
+                    print("Thread is Utility:", Thread.current.qualityOfService == QualityOfService.utility)
+                    print("Thread is Main:", Thread.current.isMainThread)
+                },
+                onError:  { error in
+                    print("Thread is Utility:", Thread.current.qualityOfService == QualityOfService.utility)
+                    print("Thread is Main:", Thread.current.isMainThread)
+                }
+            )
             .subscribe(
-                onNext: { [weak self] (response: Response) -> Void in
+                onSuccess: { [weak self] (response: Response) -> Void in
                     guard let s = self else { return }
                     let response: GetResponse = s.transform(response: response)
 
@@ -51,10 +63,6 @@ class ResponseTests: XCTestCase {
                 },
                 onError: { (error: Error) -> Void in
                      XCTFail(error.localizedDescription)
-                },
-                onCompleted: {
-                    print("Thread is Utility:", Thread.current.qualityOfService == QualityOfService.utility)
-                    print("Thread:", Thread.current.isMainThread)
                 }
             )
             .disposed(by: self.disposeBag)
@@ -67,16 +75,17 @@ class ResponseTests: XCTestCase {
         let expectation: XCTestExpectation = self.expectation(description: "Get Request Query")
 
         let request: Request = BasicGetRequest()
+        let dispatcher: BaseRequestDispatcher = BaseRequestDispatcher()
 
-        BaseRequestDispatcher().rx.response(of: request)
+        dispatcher.rx.response(of: request)
             .subscribe(
-                onNext: { [weak self] (response: Response) -> Void in
+                onSuccess: { [weak self] (response: Response) -> Void in
                     guard let s = self else { return }
                     let response: GetResponse = s.transform(response: response)
 
                     guard case .dict(let parameters) = request.parameters else { XCTFail("Not a dictionary"); return }
 
-                    XCTAssertTrue(response.url == BaseRequestDispatcher().urlRequest(of: request).url!)
+                    XCTAssertTrue(response.url == dispatcher.builder.urlRequest(of: request).url!)
                     XCTAssertTrue(response.args.this == parameters["this"]! as! String)
                     XCTAssertTrue(response.args.what == parameters["what"]! as! String)
                     XCTAssertTrue(response.args.why == parameters["why"]! as! String)
@@ -84,7 +93,7 @@ class ResponseTests: XCTestCase {
                 },
                 onError: { (error: Error) -> Void in
 
-                XCTFail(error.localizedDescription)
+                    XCTFail(error.localizedDescription)
 
                 }
             )
@@ -106,7 +115,7 @@ class ResponseTests: XCTestCase {
 
         dispatcher.rx.response(of: request)
             .subscribe(
-                onNext: { [weak self] (response: Response) -> Void in
+                onSuccess: { [weak self] (response: Response) -> Void in
                     guard let s = self else { return }
                     let response: PostResponse = s.transform(response: response)
 
@@ -140,7 +149,7 @@ class ResponseTests: XCTestCase {
 
         dispatcher.rx.response(of: request)
             .subscribe(
-                onNext: { [weak self] (response: Response) -> Void in
+                onSuccess: { [weak self] (response: Response) -> Void in
                     guard let s = self else { return }
                     let response: FormURLEncodedResponse = s.transform(response: response)
 
@@ -175,7 +184,7 @@ class ResponseTests: XCTestCase {
 
         dispatcher.rx.response(of: request)
             .subscribe(
-                onNext: { [weak self] (response: Response) -> Void in
+                onSuccess: { [weak self] (response: Response) -> Void in
                     guard let s = self else { return }
                     let response: MultipartFormDataResponse = s.transform(response: response)
 

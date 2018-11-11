@@ -33,7 +33,6 @@
 		14292E8820557DA7004AFAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8620557DA6004AFAE8 /* RxSwift.framework */; };
 		14292E8920557DA7004AFAE8 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8720557DA7004AFAE8 /* Astral.framework */; };
 		14AAF1C120149E250030A3B1 /* RxAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AAF1B820149E250030A3B1 /* RxAstral.framework */; };
-		14AAF1C620149E250030A3B1 /* RxAstralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1C520149E250030A3B1 /* RxAstralTests.swift */; };
 		14AAF1D12014A0500030A3B1 /* RxAstral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D02014A0500030A3B1 /* RxAstral.swift */; };
 		14AAF1D32014A1820030A3B1 /* Test Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D22014A1820030A3B1 /* Test Helpers.swift */; };
 		14C4C07C2026F0B700938416 /* RxAstral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D02014A0500030A3B1 /* RxAstral.swift */; };
@@ -82,7 +81,6 @@
 		14AAF1BA20149E250030A3B1 /* RxAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAstral.h; sourceTree = "<group>"; };
 		14AAF1BB20149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AAF1C020149E250030A3B1 /* RxAstralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxAstralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14AAF1C520149E250030A3B1 /* RxAstralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstralTests.swift; sourceTree = "<group>"; };
 		14AAF1C720149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14AAF1D02014A0500030A3B1 /* RxAstral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAstral.swift; sourceTree = "<group>"; };
 		14AAF1D22014A1820030A3B1 /* Test Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test Helpers.swift"; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 				14292E58205561A0004AFAE8 /* Utilities */,
 				14292E53205561A0004AFAE8 /* ResponseTests.swift */,
 				14AAF1D22014A1820030A3B1 /* Test Helpers.swift */,
-				14AAF1C520149E250030A3B1 /* RxAstralTests.swift */,
 				14AAF1C720149E250030A3B1 /* Info.plist */,
 			);
 			path = RxAstralTests;
@@ -683,7 +680,6 @@
 				14292E67205561A0004AFAE8 /* BasicConfiguration.swift in Sources */,
 				14292E69205561A0004AFAE8 /* MultipartConfiguration.swift in Sources */,
 				14292E68205561A0004AFAE8 /* FormURLEncodedConfiguration.swift in Sources */,
-				14AAF1C620149E250030A3B1 /* RxAstralTests.swift in Sources */,
 				14292E6D205561A0004AFAE8 /* MultipartFormDataResponse.swift in Sources */,
 				14292E6F205561A1004AFAE8 /* PostResponse.swift in Sources */,
 				14292E6E205561A1004AFAE8 /* FormURLEncodedResponse.swift in Sources */,
