@@ -6,13 +6,13 @@
 //  Copyright © 2018 CocoaPods. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-//! Project version number for RxAstral.
-FOUNDATION_EXPORT double RxAstralVersionNumber;
-
-//! Project version string for RxAstral.
-FOUNDATION_EXPORT const unsigned char RxAstralVersionString[];
+//#import <Foundation/Foundation.h>
+//
+////! Project version number for RxAstral.
+//FOUNDATION_EXPORT double RxAstralVersionNumber;
+//
+////! Project version string for RxAstral.
+//FOUNDATION_EXPORT const unsigned char RxAstralVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RxAstral/PublicHeader.h>
 
