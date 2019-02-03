@@ -32,6 +32,9 @@
 		14292E8520557D99004AFAE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8420557D99004AFAE8 /* Foundation.framework */; };
 		14292E8820557DA7004AFAE8 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8620557DA6004AFAE8 /* RxSwift.framework */; };
 		14292E8920557DA7004AFAE8 /* Astral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14292E8720557DA7004AFAE8 /* Astral.framework */; };
+		145051C72206F610009A9F69 /* pic3.png in Resources */ = {isa = PBXBuildFile; fileRef = 145051C42206F610009A9F69 /* pic3.png */; };
+		145051C82206F610009A9F69 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 145051C52206F610009A9F69 /* pic1.png */; };
+		145051C92206F610009A9F69 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 145051C62206F610009A9F69 /* pic2.png */; };
 		14AAF1C120149E250030A3B1 /* RxAstral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14AAF1B820149E250030A3B1 /* RxAstral.framework */; };
 		14AAF1D12014A0500030A3B1 /* RxAstral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D02014A0500030A3B1 /* RxAstral.swift */; };
 		14AAF1D32014A1820030A3B1 /* Test Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AAF1D22014A1820030A3B1 /* Test Helpers.swift */; };
@@ -77,6 +80,9 @@
 		14292E8420557D99004AFAE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		14292E8620557DA6004AFAE8 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/watchOS/RxSwift.framework; sourceTree = "<group>"; };
 		14292E8720557DA7004AFAE8 /* Astral.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Astral.framework; path = Carthage/Build/watchOS/Astral.framework; sourceTree = "<group>"; };
+		145051C42206F610009A9F69 /* pic3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic3.png; sourceTree = "<group>"; };
+		145051C52206F610009A9F69 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.png; sourceTree = "<group>"; };
+		145051C62206F610009A9F69 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
 		14AAF1B820149E250030A3B1 /* RxAstral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14AAF1BA20149E250030A3B1 /* RxAstral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxAstral.h; sourceTree = "<group>"; };
 		14AAF1BB20149E250030A3B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +198,17 @@
 			path = Requests;
 			sourceTree = "<group>";
 		};
+		145051C32206F601009A9F69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145051C52206F610009A9F69 /* pic1.png */,
+				145051C62206F610009A9F69 /* pic2.png */,
+				145051C42206F610009A9F69 /* pic3.png */,
+				14AAF1C720149E250030A3B1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		14AAF1B920149E250030A3B1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,7 +227,7 @@
 				14292E58205561A0004AFAE8 /* Utilities */,
 				14292E53205561A0004AFAE8 /* ResponseTests.swift */,
 				14AAF1D22014A1820030A3B1 /* Test Helpers.swift */,
-				14AAF1C720149E250030A3B1 /* Info.plist */,
+				145051C32206F601009A9F69 /* Supporting Files */,
 			);
 			path = RxAstralTests;
 			sourceTree = "<group>";
@@ -480,6 +497,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145051C82206F610009A9F69 /* pic1.png in Resources */,
+				145051C72206F610009A9F69 /* pic3.png in Resources */,
+				145051C92206F610009A9F69 /* pic2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,7 +836,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = RxAstralTests/Info.plist;
+				INFOPLIST_FILE = "RxAstralTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstralTests;
@@ -844,7 +864,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = RxAstralTests/Info.plist;
+				INFOPLIST_FILE = "RxAstralTests/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.julioalorro.RxAstralTests;

@@ -1,9 +1,7 @@
 //
-//  BasicGetRequest.swift
-//  Astral
-//
-//  Created by Julio Alorro on 1/28/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  RxAstral
+//  Copyright (c) 2017-2019 Julio Miguel Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import Foundation
@@ -13,7 +11,7 @@ struct BasicGetRequest: Request {
 
     let configuration: RequestConfiguration = BasicConfiguration()
 
-    let method: HTTPMethod = .get
+    let method: HTTPMethod = HTTPMethod.get
 
     let pathComponents: [String] = [
         "get"
@@ -26,8 +24,8 @@ struct BasicGetRequest: Request {
     ])
 
     let headers: Set<Header> = [
-        Header(key: Header.Field.custom("Get-Request"), value: Header.Value.custom("YES")),
-        Header(key: Header.Field.accept, value: Header.Value.mediaType(MediaType.applicationJSON)),
-        Header(key: Header.Field.contentType, value: Header.Value.mediaType(MediaType.applicationJSON))
+        Header(key: Header.Key.custom("Get-Request"), value: Header.Value.custom("YES")),
+        Header(key: Header.Key.accept, value: Header.Value.mediaType(MediaType.applicationJSON)),
+        Header(key: Header.Key.contentType, value: Header.Value.mediaType(MediaType.applicationJSON))
     ]
 }

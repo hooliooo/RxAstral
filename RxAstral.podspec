@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RxAstral'
   s.module_name      = 'RxAstral'
-  s.version          = '0.2.5'
+  s.version          = '0.3.0'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
 
   s.summary          = 'An Rx extension to Astral'

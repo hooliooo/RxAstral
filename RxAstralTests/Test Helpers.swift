@@ -1,9 +1,7 @@
 //
-//  Test Helpers.swift
-//  RxAstralTests
-//
-//  Created by Julio Alorro on 1/21/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  RxAstral
+//  Copyright (c) 2017-2019 Julio Miguel Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import Foundation
@@ -23,7 +21,7 @@ struct Configuration: RequestConfiguration {
     }
 
     var baseHeaders: Set<Header> = [
-        Header(key: Header.Field.contentType, value: Header.Value.mediaType(MediaType.applicationJSON))
+        Header(key: Header.Key.contentType, value: Header.Value.mediaType(MediaType.applicationJSON))
     ]
 }
 
@@ -39,6 +37,6 @@ struct GetRequest: Request {
     ])
 
     let headers: Set<Header> = [
-        Header(key: Header.Field.custom("Get-Request"), value: Header.Value.custom("YES"))
+        Header(key: Header.Key.custom("Get-Request"), value: Header.Value.custom("YES"))
     ]
 }

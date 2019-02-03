@@ -1,9 +1,7 @@
 //
-//  BasicPostRequest.swift
-//  AstralTests
-//
-//  Created by Julio Alorro on 1/28/18.
-//  Copyright © 2018 CocoaPods. All rights reserved.
+//  RxAstral
+//  Copyright (c) 2017-2019 Julio Miguel Alorro
+//  Licensed under the MIT license. See LICENSE file
 //
 
 import Foundation
@@ -13,7 +11,7 @@ struct BasicPostRequest: Request {
 
     let configuration: RequestConfiguration = BasicConfiguration()
 
-    let method: HTTPMethod = .post
+    let method: HTTPMethod = HTTPMethod.post
 
     let pathComponents: [String] = [
         "post"
@@ -26,6 +24,6 @@ struct BasicPostRequest: Request {
     ])
 
     let headers: Set<Header> = [
-        Header(key: Header.Field.custom("Get-Request"), value: Header.Value.custom("Yes"))
+        Header(key: Header.Key.custom("Get-Request"), value: Header.Value.custom("Yes"))
     ]
 }

@@ -1,3 +1,9 @@
+//
+//  RxAstral
+//  Copyright (c) 2017-2019 Julio Miguel Alorro
+//  Licensed under the MIT license. See LICENSE file
+//
+
 import XCTest
 import Astral
 import RxSwift
@@ -17,7 +23,8 @@ class ResponseTests: XCTestCase {
 
     var disposeBag: DisposeBag!
     let decoder: JSONDecoder = JSONDecoder()
-    private let backgroundScheduler: ConcurrentDispatchQueueScheduler = ConcurrentDispatchQueueScheduler(qos: DispatchQoS.utility)
+
+    private let backgroundScheduler: SerialDispatchQueueScheduler = SerialDispatchQueueScheduler(qos: DispatchQoS.utility)
 
     func transform<T: Decodable>(response: Response) -> T {
         do {
@@ -54,7 +61,7 @@ class ResponseTests: XCTestCase {
 
                     let accept: Header = request.headers.filter { $0.key == .accept }.first!
                     let contentType: Header = request.headers.filter { $0.key == .contentType }.first!
-                    let custom: Header = request.headers.filter { $0.key == Header.Field.custom("Get-Request") }.first!
+                    let custom: Header = request.headers.filter { $0.key == Header.Key.custom("Get-Request") }.first!
 
                     XCTAssertTrue(response.headers.accept == accept.value.stringValue)
                     XCTAssertTrue(response.headers.contentType == contentType.value.stringValue)
@@ -179,7 +186,7 @@ class ResponseTests: XCTestCase {
         let request: MultiPartFormDataRequest = BasicMultipartFormDataRequest()
 
         let dispatcher: BaseRequestDispatcher = BaseRequestDispatcher(
-            strategy: MultiPartFormDataStrategy(request: request)
+            strategy: MultiPartFormDataStrategy()
         )
 
         dispatcher.rx.response(of: request)
@@ -207,6 +214,49 @@ class ResponseTests: XCTestCase {
 
         self.waitForExpectations(timeout: 5.0, handler: nil)
 
+    }
+
+    public func testForMultipartFormDataRequest2() {
+
+        let expectation: XCTestExpectation = self.expectation(description: "Multipart form data")
+
+        let dispatcher: BaseRequestDispatcher = BaseRequestDispatcher(builder: MultiPartFormDataBuilder())
+        let request: MultiPartFormDataRequest = BasicMultipartFormDataRequest()
+
+        dispatcher.rx.multipartFormDataResponse(of: request)
+            .observeOn(self.backgroundScheduler)
+            .do(
+                onSuccess: { response in
+                    XCTAssertTrue(Thread.current.qualityOfService == QualityOfService.utility)
+                },
+                onError:  { error in
+                    XCTAssertTrue(Thread.current.qualityOfService == QualityOfService.utility)
+                }
+            )
+            .subscribe(
+                onSuccess: { [weak self] (response: Response) -> Void in
+                    guard let s = self else { return }
+                    let response: MultipartFormDataResponse = s.transform(response: response)
+
+                    XCTAssertTrue(response.url == dispatcher.urlRequest(of: request).url!)
+                    switch request.parameters {
+                        case .dict(let parameters):
+                            XCTAssertTrue(response.form.this == parameters["this"]! as! String)
+                            XCTAssertTrue(response.form.what == parameters["what"]! as! String)
+                            XCTAssertTrue(response.form.why == parameters["why"]! as! String)
+
+                        case .array, .none:
+                            XCTFail()
+                    }
+                    expectation.fulfill()
+                },
+                onError: { (error: Error) -> Void in
+                    XCTFail(error.localizedDescription)
+                }
+            )
+            .disposed(by: self.disposeBag)
+
+        self.waitForExpectations(timeout: 20.0, handler: nil)
     }
 
 }
